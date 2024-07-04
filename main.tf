@@ -8,15 +8,15 @@ terraform {
   required_version = ">= 1.2.0"
 
   backend "s3" {
-    bucket = var.bucket
-    key    = var.key
-    region = var.region
+    bucket = "kenbuck"
+    key    = "aitech"
+    region = "eu-north-1"
   }
 }
 
 
 provider "aws" {
-  region = "eu-north-1"
+  region = var.region
 }
 
 data "aws_vpc" "default" {
