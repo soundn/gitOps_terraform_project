@@ -1,12 +1,12 @@
 variable "bucket" {
   description = "my bucket name"
-  type = string
+  type        = string
 }
 variable "key" {
   description = "path to my bucket"
-  type = string
+  type        = string
 }
 variable "region" {
   description = "for my region"
-  type = string
+  type        = string
 }
